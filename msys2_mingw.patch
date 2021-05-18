@@ -1,0 +1,26 @@
+diff --git a/src/image/image.pro b/src/image/image.pro
+index 8bc065d..3e517a6 100644
+--- a/src/image/image.pro
++++ b/src/image/image.pro
+@@ -41,7 +41,7 @@ target.path=$$INSTALLBASE/bin
+ include(../shared/shared.pri)
+ 
+ CONFIG(shared, shared|static) {
+-  LIBS += -L../../bin -lwkhtmltox
++  LIBS += -L../../bin -lwkhtmltox.dll
+ } else {
+   include(../lib/lib.pri)
+ }
+diff --git a/src/pdf/pdf.pro b/src/pdf/pdf.pro
+index 404077c..798199d 100644
+--- a/src/pdf/pdf.pro
++++ b/src/pdf/pdf.pro
+@@ -41,7 +41,7 @@ target.path=$$INSTALLBASE/bin
+ include(../shared/shared.pri)
+ 
+ CONFIG(shared, shared|static) {
+-  LIBS += -L../../bin -lwkhtmltox
++  LIBS += -L../../bin -lwkhtmltox.dll
+ } else {
+   include(../lib/lib.pri)
+ }
